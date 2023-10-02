@@ -1,0 +1,37 @@
+#1.forloop
+student_heights = input("1.give the list of heights\n").split()
+for n in range(0, len(student_heights)):
+  student_heights[n] = int(student_heights[n])
+
+total_height=0
+for height in student_heights:
+  total_height+=height
+print(f"total height {total_height}")
+student_number=0
+for length in student_heights:
+  student_number+=1
+print(f"no of students {student_number}")
+
+print(f"Avg height {round(total_height/student_number)}")
+
+
+#2.Maximum score using for loop
+# Input a list of student scores
+student_scores = input("2.Input scores of students\n").split()
+for n in range(0, len(student_scores)):
+  student_scores[n] = int(student_scores[n])
+
+maximum=0
+for score in student_scores:
+  if maximum<score:
+   maximum=score
+print(f"The highest score in the class is: {maximum}")
+
+#3.Sum of even numbers
+target = int(input("Enter a number between 0 and 1000\n")) # Enter a number between 0 and 1000
+
+even_sum=0
+for number in range(0,target+1):
+  if number%2==0:
+    even_sum+=number
+print(f"total sum of even numbers {even_sum}")  
